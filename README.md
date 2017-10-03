@@ -1,11 +1,11 @@
 # Invoice simulator - Server with Mongo
 
-This application simulates a simplified portfolio of invoices and their generation of account receivables. Compliant with the legal and banking environment, as well as interfaces easy and familiar for the personnel usually found in the finance department of local companies.
+This application simulates a simplified portfolio of invoices and their generation of account receivables.
 
-It's the server split from the ctr-invoice-mean project, so can connect to other versions of Clients and support other databases.
+It's the server part of the ctr-invoice-mean project, split so can be connected to other clients and expand to other databases.
 
-As its origin, it can be used as a demo and template of a series of finance applications develipped for clients since 2010.
-.
+As its origin, it can be used as a demo and template of a series of finance applications developped for Immaginare Service clients since 2010.
+
 ## Scope
 
 The REST full server application controls:
@@ -38,21 +38,22 @@ $ node index
 
 * Open browser and create default database
 ```shell
-localhost:3000/api/install
+localhost:4000/api/install
 ```
 This url will reset the original database at any time
 
 * Still in the browser, run the application
 ```shell
-localhost:3000
+localhost:4000
 ```
 
 ## Configuration
 In the file config.json:
 
-* serverPort, default: 3000
-* mongooseConnectionString, default: 'mongodb://localhost/example'
+* serverPort, default 4000
+* mongooseConnectionString, default 'mongodb://localhost/example'
 * token, defult '123321'
+* login, default false
 
 
 ## Contribution ##
